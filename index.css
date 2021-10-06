@@ -1,0 +1,80 @@
+body {
+  background-color: #f2f2f2;
+  color: #333333;
+  font-family: system-ui;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+  max-width: 60rem;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 800;
+  background: linear-gradient(
+    to bottom right,
+    rgba(95, 187, 95, 1) 0%,
+    rgba(84, 182, 84, 1) 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 26px;
+  color: black;
+}
+
+b {
+  color: #007aff;
+}
+
+button {
+  background: linear-gradient(
+    to bottom right,
+    rgba(95, 187, 95, 1) 0%,
+    rgba(84, 182, 84, 1) 90%
+  );
+  position: relative;
+  border: none;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #808080;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1c1c1e;
+    color: #aaaaaa;
+  }
+
+  p {
+    color: #aaaaaa;
+  }
+
+  h2 {
+    color: white;
+  }
+}

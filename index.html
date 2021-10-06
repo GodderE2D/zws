@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📋 Zero-width space</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <h1 id="status">Copying a zero-width-space to your clipboard...</h1>
+
+    <div id="error" style="display: none">
+      <h2>Copy it manually:</h2>
+
+      <p id="selectAll">1. Select all in this text field</p>
+
+      <textarea>&#8203;</textarea>
+
+      <p id="copy">2. Copy the contents</p>
+
+      <div style="height: 1.5rem"></div>
+
+      ​​​<button onclick="run()">Try again</button>
+
+      <div style="height: 1.5rem"></div>
+
+      <details>
+        <summary style="cursor: pointer">Show/hide debug information</summary>
+        <pre id="debug"></pre>
+      </details>
+    </div>
+
+    <div id="notWorking">
+      <h2>Not working?</h2>
+
+      <button
+        onclick="error('Manually triggered.')"
+        style="margin-right: 0.25rem"
+      >
+        See manual instructions
+      </button>
+
+      <button onclick="run()" style="margin-left: 0.25rem">Try again</button>
+    </div>
+
+    <div class="footer">
+      <div>
+        <small>
+          Made with 💚 by <a href="https://www.godder.xyz">GodderE2D</a>.
+        </small>
+      </div>
+      <div>
+        <small>
+          <strong>zws.godder.xyz</strong> is licensed under the
+          <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>
+          license.
+        </small>
+      </div>
+    </div>
+  </body>
+</html>
