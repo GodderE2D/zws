@@ -17,13 +17,15 @@ p {
 h1 {
   font-size: 45px;
   font-weight: 800;
-  background: linear-gradient(
-    to bottom right,
-    rgba(95, 187, 95, 1) 0%,
-    rgba(84, 182, 84, 1) 90%
-  );
+  background: linear-gradient(to bottom right, rgba(95, 187, 95, 1) 0%, rgba(84, 182, 84, 1) 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 35px;
+  }
 }
 
 h2 {
@@ -32,16 +34,12 @@ h2 {
   color: black;
 }
 
-b {
+a {
   color: #007aff;
 }
 
 button {
-  background: linear-gradient(
-    to bottom right,
-    rgba(95, 187, 95, 1) 0%,
-    rgba(84, 182, 84, 1) 90%
-  );
+  background: linear-gradient(to bottom right, rgba(95, 187, 95, 1) 0%, rgba(84, 182, 84, 1) 90%);
   position: relative;
   border: none;
   color: #ffffff;

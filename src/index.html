@@ -10,53 +10,48 @@
     <script defer src="index.js"></script>
 
     <meta property="og:title" content="Copy a zero-width space" />
-    <meta
-      property="og:description"
-      content="📋 Quickly copy a zero-width space to your clipboard"
-    />
+    <meta property="og:description" content="📋 Quickly copy a zero-width space to your clipboard" />
     <meta name="theme-color" content="#40bf6c" />
   </head>
   <body>
-    <h1 id="status">Copying a zero-width-space to your clipboard...</h1>
+    <main>
+      <h1 id="status">Copying a zero-width-space to your clipboard...</h1>
 
-    <div id="error" style="display: none">
-      <h2>Copy it manually:</h2>
+      <div id="error" style="display: none">
+        <h2>Copy it manually:</h2>
 
-      <p id="selectAll">1. Select all in this text field</p>
+        <p id="selectAll">1. Select all in this text field</p>
 
-      <textarea>&#8203;</textarea>
+        <textarea>&#8203;</textarea>
 
-      <p id="copy">2. Copy the contents</p>
+        <p id="copy">2. Copy the contents</p>
 
-      <div style="height: 1.5rem"></div>
+        <div style="height: 1.5rem"></div>
 
-      ​​​<button onclick="run()">Try again</button>
+        <button onclick="run()">Try again</button>
 
-      <div style="height: 1.5rem"></div>
+        <div style="height: 1.5rem"></div>
 
-      <details>
-        <summary style="cursor: pointer">Show/hide debug information</summary>
-        <pre id="debug"></pre>
-      </details>
-    </div>
+        <details>
+          <summary style="cursor: pointer">Show/hide debug information</summary>
+          <pre id="debug"></pre>
+        </details>
+      </div>
 
-    <div id="notWorking">
-      <h2>Not working?</h2>
+      <div id="notWorking">
+        <h2>Not working?</h2>
 
-      <button
-        onclick="error('Manually triggered.')"
-        style="margin-right: 0.25rem"
-      >
-        See manual instructions
-      </button>
+        <button onclick="error('Manually triggered.')" style="margin-right: 0.25rem">See manual instructions</button>
 
-      <button onclick="run()" style="margin-left: 0.25rem">Try again</button>
-    </div>
+        <button onclick="run()" style="margin-left: 0.25rem">Try again</button>
+      </div>
+    </main>
 
-    <div class="footer">
+    <footer class="footer">
       <div>
         <small>
           Made with 💚 by <a href="https://www.godder.xyz">GodderE2D</a>.
+          <a href="https://github.com/GodderE2D/zws">Source</a>
         </small>
       </div>
       <div>
@@ -66,6 +61,6 @@
           license.
         </small>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
